@@ -2,9 +2,35 @@
 
 using namespace std;
 
+void printFile(vector<vector<double>> &data){
+    for(int i = 0; i < data.size(); i++){
+        for(int j = 0; j < data[i].size(); j++){
+            cout << data[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+void readFile(vector<vector<double>> &data, string &fileName){
+    ifstream file (fileName);
+    string curRow;
+    double curValue;
+
+    while(getline(file, curRow)){
+        stringstream row(curRow);
+        vector<double> temp;
+        while(row >> curValue){
+            temp.push_back(curValue);
+        }
+        data.push_back(temp);
+    }
+    file.close();
+}
+
 int main(int argc, char* argv[]){
     int dataSize = 0;
     int dataFileNumber = 0;
+    vector<vector<double>> data;
     vector<string> fileSizeName = {"small", "large", "XXlarge"};
 
     //Get data file size + data validation
@@ -42,7 +68,8 @@ int main(int argc, char* argv[]){
 
     cout << fileName << endl;
 
-
+    readFile(data, fileName);
+    printFile(data);
 
     return 0;
 }
