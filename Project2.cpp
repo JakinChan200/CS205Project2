@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 void printFile(vector<vector<double>> &data){
@@ -27,16 +26,17 @@ void readFile(vector<vector<double>> &data, string &fileName){
     file.close();
 }
 
-int nearestNeighbor(vector<vector<double>> &data, vector<double> &dataPoint){
+int nearestNeighbor(vector<vector<double>> &data, vector<double> &dataPoint){           //return the index of the nearest neighbor
     cout << "Data Size: " << data.size() << endl;
     double closestDistance = __SIZEOF_DOUBLE__;
     int indexOfClosest = -1;
+    double sum = 0;
     double curDist = 0;
     int len = data[0].size(); 
 
     for(int i = 0; i < data.size(); i++){
-        double sum = 0;
-        for(int j  = 1; j < len; j++){
+        sum = 0;
+        for(int j = 1; j < len; j++){
             sum += pow(data[i][j] - dataPoint[j], 2);
         }
 
@@ -48,6 +48,35 @@ int nearestNeighbor(vector<vector<double>> &data, vector<double> &dataPoint){
         cout << " index: " << i << " distance: " << curDist << endl; 
     }
     return indexOfClosest;
+}
+
+void leaveOneOutValidator(vector<vector<double>> data, int row){    //data is passed by value (a local copy is created).  given a row to compare the remaining rows to, find the accuracy of the remaining rows
+    //int rlen = data.size();
+    //int clen = data.size();
+    //int r, c;
+    vector<vector<double>> leftOutFeat;
+    /*
+    for(r = 0; r < rlen; r++){
+        for(c = 0; c < clen; c++){
+            if(c == (col+1)){                                       //ignore the specified column
+                leftOutFeat.push_back(data[r][c]);
+                continue;
+            }
+            remainingFeats.push_back(data[r][c]);
+            //cout << data[r][c] << "  ";
+        }
+        cout << '\n';
+    }
+    */
+    leftOutFeat.push_back(data[row]);
+    for(int i = 0; i < leftOutFeat.size(); i++){
+        printf("leftOutFeat[%d] = %p", i, leftOutFeat[i]);
+    }
+    data.erase(data.begin() + row);                                 //note: make sure that original data is not be changed
+}
+
+bool ifSameClassLabel(double predclass, vector<vector<double>> &data, double instnum){      //check if predicted class is the same as the actual class stored in the first column of data
+    return fabs(predclass - data[instnum][0]) < 0.01;
 }
 
 int main(int argc, char* argv[]){
@@ -89,11 +118,11 @@ int main(int argc, char* argv[]){
                 break;
         }
 
-
-    //Testing File Name
-    fileName = "Datasets/CS170_" + fileSizeName[dataSize-1] + "_Data__" + to_string(dataFileNumber) + ".txt";
-    cout << fileName << endl;
-    }else{
+        //Testing File Name
+        fileName = "Datasets/CS170_" + fileSizeName[dataSize-1] + "_Data__" + to_string(dataFileNumber) + ".txt";
+        cout << fileName << endl;
+    }
+    else{
         fileName = "Datasets/TestData.txt";
     }
 
@@ -106,5 +135,9 @@ int main(int argc, char* argv[]){
     int nearestNeighborindex = nearestNeighbor(data, testDataPoint);
     cout << "Nearest Neighbor Testing Index: " << nearestNeighborindex << endl;
 
+    //forwadSelection(data);
+    leaveOneOutValidator(data, 0);
+    cout << '\n' << ifSameClassLabel(1, data, 0) << '\n';
+    cout << '\n' << ifSameClassLabel(1, data, 0) << '\n';
     return 0;
 }
