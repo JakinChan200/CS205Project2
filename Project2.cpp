@@ -28,13 +28,15 @@ void readFile(vector<vector<double>> &data, string &fileName){
 }
 
 int nearestNeighbor(vector<vector<double>> &data, vector<double> &dataPoint){
-    //cout << "Data Size: " << data.size() << endl;
-    double sum = 0;
+    cout << "Data Size: " << data.size() << endl;
     double closestDistance = __SIZEOF_DOUBLE__;
     int indexOfClosest = -1;
     double curDist = 0;
+    int len = data[0].size(); 
+
     for(int i = 0; i < data.size(); i++){
-        for(int j  = 1; j < data[i].size(); j++){
+        double sum = 0;
+        for(int j  = 1; j < len; j++){
             sum += pow(data[i][j] - dataPoint[j], 2);
         }
 
@@ -43,7 +45,7 @@ int nearestNeighbor(vector<vector<double>> &data, vector<double> &dataPoint){
             closestDistance = curDist;
             indexOfClosest = i;
         }
-        //cout << " index: " << i << " distance: " << curDist << endl; 
+        cout << " index: " << i << " distance: " << curDist << endl; 
     }
     return indexOfClosest;
 }
