@@ -82,33 +82,6 @@ int nearestNeighbor(vector<vector<double>> &data, int rowNum, vector<int> curSet
     return indexOfClosest;
 }
 
-int calculateAccuracy(vector<vector<double>> cols, int rowNum){        //only leaveOneOutValidator can call this func. 
-    //only the columns that are needed is passed by value (a local copy is created).
-    //also given a row number to compare the remaining rows to, in order to find the accuracy of classifier for that given row
-    
-    int accuracy = 1000;
-    vector<vector<double>> leftOutFeat;
-    /*
-    for(r = 0; r < rlen; r++){
-        for(c = 0; c < clen; c++){
-            if(c == (col+1)){                                       //ignore the specified column
-                leftOutFeat.push_back(data[r][c]);
-                continue;
-            }
-            remainingFeats.push_back(data[r][c]);
-            //cout << data[r][c] << "  ";
-        }
-        cout << '\n';
-    }
-    */
-    //leftOutFeat.push_back(data[row]);
-    //for(int i = 0; i < leftOutFeat.size(); i++){
-    //    printf("leftOutFeat[%d] = %p", i, leftOutFeat[i]);
-    //}
-    //cols.erase(data.begin() + row);                                 //note: make sure that original data is not be changed
-    return accuracy;
-}
-
 double leaveOneOut(vector<vector<double>> &data, vector<int> curSet){
     //cout << "leave one out" << endl;
     int numCorrectlyClassified = 0;
@@ -124,44 +97,6 @@ double leaveOneOut(vector<vector<double>> &data, vector<int> curSet){
     // cout << "numClassified: " << (double)numCorrectlyClassified << endl;
     // cout << "data size: " << data.size() << endl;
     return (double)numCorrectlyClassified/(data.size()-1) * 100;
-}
-
-int leaveOneOutValidator(vector<vector<double>> data, vector<int> featSubsetColNums){  //the once function that can call calculateAccuracy.
-    //data is passed by value (a local copy is created).
-    //given a vector of column numbers that  to compare the remaining rows to, find the accuracy of the remaining rows.
-    
-    int rlen = data.size();
-    int clen = data[0].size();
-    int flen = featSubsetColNums.size();
-    int rInd, cInd, colNumInd, totalAccuracy = 0;
-    vector<vector<double>> leftOutFeat, remainingFeats;
-
-    if(featSubsetColNums[0] == 0){
-        return -1;
-    }
-
-    vector<vector<double>> vvd;
-    for(rInd = 0; rInd < rlen; rInd++){
-        for(cInd = 1; cInd < clen; cInd++){
-            printf("f  %d  %d\n", cInd, rInd);
-            for(colNumInd = 1; colNumInd < flen; colNumInd++){
-                //printf("f %d  %d  %d", cInd, colNumInd, rInd); //cout << cInd << "  " << colNumInd << "  " << rInd << "\n";
-                if(cInd == colNumInd){                         //ignore the specified column
-                    //cout << data[rInd][featSubsetColNums[cInd]] << "\n";
-                    vector<double> d;
-                    d.push_back(data[rInd][featSubsetColNums[cInd]]);
-                    leftOutFeat.push_back(d);    //data[rInd][featSubsetColNums[cInd]]);
-                    break;
-                }
-                else{
-                    ;//remainingFeats.push_back(data[rInd][cInd]);
-                }
-            //cout << data[rInd][cInd] << "  ";
-            }
-        }
-        cout << '\n';
-    }
-    return totalAccuracy;
 }
 
 void forwardSelection(vector<vector<double>> &data){
