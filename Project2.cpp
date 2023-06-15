@@ -4,6 +4,7 @@ using namespace std;
 
 double highestAccuracy = 0;
 vector<int> highestAccuracyFeatures;
+int maxLevelDec = 3;
 
 void printFile(vector<vector<double>> &data){
     for(int i = 0; i < data.size(); i++){
@@ -139,7 +140,7 @@ void forwardSelection(vector<vector<double>> &data){
             numLevelsDecreasing = 0;
         }
         else{                                   //if accuracy decreased or stayed the same
-            if(numLevelsDecreasing == 2){
+            if(numLevelsDecreasing == maxLevelDec){
                 break;
             }
             numLevelsDecreasing++;
@@ -174,7 +175,7 @@ void backwardElimination(vector<vector<double>> &data){
         cout << "\nprevBestAccuracy = " << prevBestAccuracy << "\n";
         curBestAccuracy = 0;
         double curFeatureIndexLoweringAccuracy;
-
+        
         for(int j = 1; j < data[0].size(); j++){    //represents a level
             //go through the features columns and choose the subset from that is in indexOfFeaturesPicked that gives you the best accuracy.
             if(!isDupe(indexOfAllFeaturesPicked, j)) continue;
@@ -184,7 +185,8 @@ void backwardElimination(vector<vector<double>> &data){
             //printFeatures(indexOfFeaturesToBeKept);
             // cout << endl;
 
-            accuracy = leaveOneOut(data, indexOfFeaturesToBeKept);
+            accuracy = leaveOneOut(data, indexOfFeaturesToBeKept);          //seg fault is because of this line
+            //accuracy = j;
             cout << "Using Features(s) ";
             printFeatures(indexOfAllFeaturesPicked);
             cout << " while considering removing " << j << ", the accuracy is " << accuracy << "%" << endl;
@@ -201,7 +203,7 @@ void backwardElimination(vector<vector<double>> &data){
             numLevelsDecreasing = 0;
         }
         else{                                   //if accuracy decreased or stayed the same
-            if(numLevelsDecreasing == 2){
+            if(numLevelsDecreasing == maxLevelDec){
                 break;
             }
             numLevelsDecreasing++;
@@ -236,9 +238,10 @@ int main(int argc, char* argv[]){
     cout << "2: large" << endl;
     cout << "3: XXXlarge" << endl;
     cout << "4: Custom Test Data" << endl;
+    cout << "5: Pokemon Dataset" << endl;
 
     cin >> dataSize;
-    while(dataSize < 1 || dataSize > 4){
+    while(dataSize < 1 || dataSize > 5){
         cout << "That is not a valid input, please try again." << endl;
         cin >> dataSize;
     }
@@ -246,6 +249,20 @@ int main(int argc, char* argv[]){
     if(dataSize != 4){
         //Get File number + data validation
         switch(dataSize){
+            case 1:
+                do{
+                    cout << "What dataset file do you want to use?" << endl;
+                    cout << "Enter a valid number from 1-33: " << endl;
+                    cin >> dataFileNumber;
+                } while(dataFileNumber < 1 || dataFileNumber > 33);
+                break;
+            case 2:
+                do{
+                    cout << "What dataset file do you want to use?" << endl;
+                    cout << "Enter a valid number from 1-33: " << endl;
+                    cin >> dataFileNumber;
+                } while(dataFileNumber < 1 || dataFileNumber > 33);
+                break;
             case 3:
                 do{
                     cout << "What dataset file do you want to use?" << endl;
@@ -253,18 +270,22 @@ int main(int argc, char* argv[]){
                     cin >> dataFileNumber;
                 } while(dataFileNumber < 1 || dataFileNumber > 24);
                 break;
+            case 5:
+                cout << "Using Pokemon Dataset..." << endl;
+                break;
             default:
-                do{
-                    cout << "What dataset file do you want to use?" << endl;
-                    cout << "Enter a valid number from 1-33: " << endl;
-                    cin >> dataFileNumber;
-                } while(dataFileNumber < 1 || dataFileNumber > 33);
                 break;
         }
 
         //Testing File Name
-        fileName = "Datasets/CS170_" + fileSizeName[dataSize-1] + "_Data__" + to_string(dataFileNumber) + ".txt";
+        if(dataSize != 5){
+            fileName = "Datasets/CS170_" + fileSizeName[dataSize-1] + "_Data__" + to_string(dataFileNumber) + ".txt";
+        }
+        else{
+            fileName = "pokemon.txt";
+        }
         cout << fileName << endl;
+
     }
     else{
         fileName = "Datasets/TestData.txt";
