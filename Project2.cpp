@@ -113,6 +113,7 @@ void forwardSelection(vector<vector<double>> &data){
         cout << "\nprevBestAccuracy = " << prevBestAccuracy << "\n";
         curBestAccuracy = 0;
         double curBestAccuracyFeatureIndex;
+      
         for(int j = 1; j < data[0].size(); j++){
             if(isDupe(indexOfFeaturesPicked, j)) continue;
 
@@ -222,17 +223,18 @@ bool ifSameClassLabel(double predclass, vector<vector<double>> &data, double ins
 int main(int argc, char* argv[]){
     ios_base::sync_with_stdio(false);
     cin.tie(0);
+    cout << setprecision(4);
     int dataSize = 0;
     int dataFileNumber = 0;
     string fileName;
     vector<vector<double>> data;
-    vector<string> fileSizeName = {"small", "large", "XXlarge"};
+    vector<string> fileSizeName = {"small", "large", "XXXlarge"};
 
     //Get data file size + data validation
     cout << "What size dataset are you planning to use?" << endl;
     cout << "1: small" << endl;
     cout << "2: large" << endl;
-    cout << "3: XXXLarge" << endl;
+    cout << "3: XXXlarge" << endl;
     cout << "4: Custom Test Data" << endl;
 
     cin >> dataSize;
@@ -271,6 +273,11 @@ int main(int argc, char* argv[]){
     //Testing readFile
     readFile(data, fileName);
     //printFile(data);
+
+    //Testing NearestNeighbor
+    // vector<double> testDataPoint = {2, 1, 2, 3, 4};
+    // int nearestNeighborindex = nearestNeighbor(data, testDataPoint);
+    // cout << "Nearest Neighbor Testing Index: " << nearestNeighborindex << endl;
 
     cout << "Type the number of the algorithm you want to run." << endl;
     cout << "1. Forward Selection" << endl;
