@@ -73,7 +73,7 @@ int nearestNeighbor(vector<vector<double>> &data, int rowNum, vector<int> curSet
         }
 
         curDist = sqrt(sum);
-        //cout << "Distance between rowNum: " << rowNum << " and i " << i << " is " << curDist << endl;
+        //cout << "Distance between rowNum: " << rowNum << " and i " << i << " is " << curDist  << "   " << closestDistance << endl;
         if(curDist < closestDistance){
             closestDistance = curDist;
             indexOfClosest = i;
@@ -89,14 +89,16 @@ double leaveOneOut(vector<vector<double>> &data, vector<int> curSet){
     for(int i = 0; i < data.size(); i++){
         //cout << i << endl;
         int neighborIndex = nearestNeighbor(data, i, curSet);
+        //cout << "i "  << i << " neighbor " << neighborIndex << endl;
         if(data[neighborIndex][0] == data[i][0]){
             //cout << "i "  << i << " neighbor " << neighborIndex << endl;
+            //cout << "if data[neighborIndex][0] "  << data[10][0] << endl;    // << "  data[i][0] " << data[i][0] << endl;
             numCorrectlyClassified++;
         }
     }
-    // cout << "Correctly guessed: " << (double)numCorrectlyClassified/(data.size()-1) * 100 << endl;
-    // cout << "numClassified: " << (double)numCorrectlyClassified << endl;
-    // cout << "data size: " << data.size() << endl;
+    //cout << "Correctly guessed: " << (double)numCorrectlyClassified/(data.size()-1) * 100 << endl;
+    //cout << "numClassified: " << (double)numCorrectlyClassified << endl;
+    //cout << "data size: " << data.size() << endl;
     return (double)numCorrectlyClassified/(data.size()-1) * 100;
 }
 
@@ -111,7 +113,7 @@ void forwardSelection(vector<vector<double>> &data){
         //cout << i << " " << data[0].size() << endl;
         vector<int> indexOfFeaturesConsidering;
         prevBestAccuracy = curBestAccuracy;     //save this accuracy for next level
-        cout << "\nprevBestAccuracy = " << prevBestAccuracy << "\n";
+        //cout << "\nprevBestAccuracy = " << prevBestAccuracy << "\n";
         curBestAccuracy = 0;
         double curBestAccuracyFeatureIndex;
       
