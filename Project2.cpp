@@ -5,7 +5,7 @@ using namespace chrono;
 
 double highestAccuracy = 0;
 vector<int> highestAccuracyFeatures;
-int maxLevelDec = 500;
+int maxLevelDec = 3;
 
 void printFile(vector<vector<double>> &data){
     for(int i = 0; i < data.size(); i++){
