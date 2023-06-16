@@ -1,0 +1,363 @@
+What size dataset are you planning to use?
+1: small
+2: large
+3: XXXlarge
+4: Custom Test Data
+5: Pokemon Dataset
+2
+What dataset file do you want to use?
+Enter a valid number from 1-33:
+8
+Datasets/CS170_large_Data__8.txt
+Type the number of the algorithm you want to run.
+1. Forward Selection
+2. Backwards Elimination
+1
+
+prevBestAccuracy = 0
+Using Features(s) {} while considering 1, the accuracy is 69.48%
+Using Features(s) {} while considering 2, the accuracy is 68.63%
+Using Features(s) {} while considering 3, the accuracy is 69.08%
+Using Features(s) {} while considering 4, the accuracy is 73.24%
+Using Features(s) {} while considering 5, the accuracy is 69.03%
+Using Features(s) {} while considering 6, the accuracy is 69.43%
+Using Features(s) {} while considering 7, the accuracy is 69.53%
+Using Features(s) {} while considering 8, the accuracy is 68.48%
+Using Features(s) {} while considering 9, the accuracy is 70.04%
+Using Features(s) {} while considering 10, the accuracy is 69.38%
+Using Features(s) {} while considering 11, the accuracy is 70.14%
+Using Features(s) {} while considering 12, the accuracy is 70.79%
+Using Features(s) {} while considering 13, the accuracy is 67.68%
+Using Features(s) {} while considering 14, the accuracy is 70.24%
+Using Features(s) {} while considering 15, the accuracy is 69.98%
+Using Features(s) {} while considering 16, the accuracy is 70.19%
+Using Features(s) {} while considering 17, the accuracy is 69.73%
+Using Features(s) {} while considering 18, the accuracy is 70.94%
+Using Features(s) {} while considering 19, the accuracy is 69.78%
+Using Features(s) {} while considering 20, the accuracy is 82.89%
+For level 1, the index chosen is 20 with an accuracy of 82.89%
+The current feature list is: {20}
+
+
+prevBestAccuracy = 82.89
+Using Features(s) {20} while considering 1, the accuracy is 82.99%
+Using Features(s) {20} while considering 2, the accuracy is 83.09%
+Using Features(s) {20} while considering 3, the accuracy is 82.79%
+Using Features(s) {20} while considering 4, the accuracy is 96.85%
+Using Features(s) {20} while considering 5, the accuracy is 82.79%
+Using Features(s) {20} while considering 6, the accuracy is 82.04%
+Using Features(s) {20} while considering 7, the accuracy is 83.19%
+Using Features(s) {20} while considering 8, the accuracy is 81.49%
+Using Features(s) {20} while considering 9, the accuracy is 85.84%
+Using Features(s) {20} while considering 10, the accuracy is 82.19%
+Using Features(s) {20} while considering 11, the accuracy is 83.54%
+Using Features(s) {20} while considering 12, the accuracy is 83.09%
+Using Features(s) {20} while considering 13, the accuracy is 82.24%
+Using Features(s) {20} while considering 14, the accuracy is 80.94%
+Using Features(s) {20} while considering 15, the accuracy is 83.14%
+Using Features(s) {20} while considering 16, the accuracy is 82.69%
+Using Features(s) {20} while considering 17, the accuracy is 83.49%
+Using Features(s) {20} while considering 18, the accuracy is 82.04%
+Using Features(s) {20} while considering 19, the accuracy is 81.89%
+For level 2, the index chosen is 4 with an accuracy of 96.85%
+The current feature list is: {4, 20}
+
+
+prevBestAccuracy = 96.85
+Using Features(s) {4, 20} while considering 1, the accuracy is 93.5%
+Using Features(s) {4, 20} while considering 2, the accuracy is 93.95%
+Using Features(s) {4, 20} while considering 3, the accuracy is 94.45%
+Using Features(s) {4, 20} while considering 5, the accuracy is 94.5%
+Using Features(s) {4, 20} while considering 6, the accuracy is 94.4%
+Using Features(s) {4, 20} while considering 7, the accuracy is 93.95%
+Using Features(s) {4, 20} while considering 8, the accuracy is 95.55%
+Using Features(s) {4, 20} while considering 9, the accuracy is 96.75%
+Using Features(s) {4, 20} while considering 10, the accuracy is 94.5%
+Using Features(s) {4, 20} while considering 11, the accuracy is 93.45%
+Using Features(s) {4, 20} while considering 12, the accuracy is 93.85%
+Using Features(s) {4, 20} while considering 13, the accuracy is 93.85%
+Using Features(s) {4, 20} while considering 14, the accuracy is 94.15%
+Using Features(s) {4, 20} while considering 15, the accuracy is 93.9%
+Using Features(s) {4, 20} while considering 16, the accuracy is 95%
+Using Features(s) {4, 20} while considering 17, the accuracy is 94.5%
+Using Features(s) {4, 20} while considering 18, the accuracy is 94.15%
+Using Features(s) {4, 20} while considering 19, the accuracy is 94.1%
+
+numLevelsDecreasing = 1
+For level 3, the index chosen is 9 with an accuracy of 96.75%
+The current feature list is: {4, 9, 20}
+
+
+prevBestAccuracy = 96.75
+Using Features(s) {4, 9, 20} while considering 1, the accuracy is 92.6%
+Using Features(s) {4, 9, 20} while considering 2, the accuracy is 92.1%
+Using Features(s) {4, 9, 20} while considering 3, the accuracy is 92.6%
+Using Features(s) {4, 9, 20} while considering 5, the accuracy is 91.65%
+Using Features(s) {4, 9, 20} while considering 6, the accuracy is 93.15%
+Using Features(s) {4, 9, 20} while considering 7, the accuracy is 92.8%
+Using Features(s) {4, 9, 20} while considering 8, the accuracy is 92.25%
+Using Features(s) {4, 9, 20} while considering 10, the accuracy is 93.1%
+Using Features(s) {4, 9, 20} while considering 11, the accuracy is 93.15%
+Using Features(s) {4, 9, 20} while considering 12, the accuracy is 92.15%
+Using Features(s) {4, 9, 20} while considering 13, the accuracy is 92.7%
+Using Features(s) {4, 9, 20} while considering 14, the accuracy is 91.95%
+Using Features(s) {4, 9, 20} while considering 15, the accuracy is 92.8%
+Using Features(s) {4, 9, 20} while considering 16, the accuracy is 92.95%
+Using Features(s) {4, 9, 20} while considering 17, the accuracy is 93.2%
+Using Features(s) {4, 9, 20} while considering 18, the accuracy is 91.35%
+Using Features(s) {4, 9, 20} while considering 19, the accuracy is 93%
+
+numLevelsDecreasing = 2
+For level 4, the index chosen is 17 with an accuracy of 93.2%
+The current feature list is: {4, 9, 17, 20}
+
+
+prevBestAccuracy = 93.2
+Using Features(s) {4, 9, 17, 20} while considering 1, the accuracy is 89.54%
+Using Features(s) {4, 9, 17, 20} while considering 2, the accuracy is 89.09%
+Using Features(s) {4, 9, 17, 20} while considering 3, the accuracy is 88.99%
+Using Features(s) {4, 9, 17, 20} while considering 5, the accuracy is 89.14%
+Using Features(s) {4, 9, 17, 20} while considering 6, the accuracy is 88.99%
+Using Features(s) {4, 9, 17, 20} while considering 7, the accuracy is 89.59%
+Using Features(s) {4, 9, 17, 20} while considering 8, the accuracy is 90.35%
+Using Features(s) {4, 9, 17, 20} while considering 10, the accuracy is 90.3%
+Using Features(s) {4, 9, 17, 20} while considering 11, the accuracy is 90.15%
+Using Features(s) {4, 9, 17, 20} while considering 12, the accuracy is 89.19%
+Using Features(s) {4, 9, 17, 20} while considering 13, the accuracy is 89.29%
+Using Features(s) {4, 9, 17, 20} while considering 14, the accuracy is 88.69%
+Using Features(s) {4, 9, 17, 20} while considering 15, the accuracy is 89.44%
+Using Features(s) {4, 9, 17, 20} while considering 16, the accuracy is 89.59%
+Using Features(s) {4, 9, 17, 20} while considering 18, the accuracy is 89.64%
+Using Features(s) {4, 9, 17, 20} while considering 19, the accuracy is 90.05%
+
+numLevelsDecreasing = 3
+For level 5, the index chosen is 8 with an accuracy of 90.35%
+The current feature list is: {4, 8, 9, 17, 20}
+
+
+prevBestAccuracy = 90.35
+Using Features(s) {4, 8, 9, 17, 20} while considering 1, the accuracy is 85.79%
+Using Features(s) {4, 8, 9, 17, 20} while considering 2, the accuracy is 87.04%
+Using Features(s) {4, 8, 9, 17, 20} while considering 3, the accuracy is 86.04%
+Using Features(s) {4, 8, 9, 17, 20} while considering 5, the accuracy is 85.24%
+Using Features(s) {4, 8, 9, 17, 20} while considering 6, the accuracy is 87.04%
+Using Features(s) {4, 8, 9, 17, 20} while considering 7, the accuracy is 86.69%
+Using Features(s) {4, 8, 9, 17, 20} while considering 10, the accuracy is 86.49%
+Using Features(s) {4, 8, 9, 17, 20} while considering 11, the accuracy is 85.74%
+Using Features(s) {4, 8, 9, 17, 20} while considering 12, the accuracy is 85.84%
+Using Features(s) {4, 8, 9, 17, 20} while considering 13, the accuracy is 85.44%
+Using Features(s) {4, 8, 9, 17, 20} while considering 14, the accuracy is 87.09%
+Using Features(s) {4, 8, 9, 17, 20} while considering 15, the accuracy is 85.84%
+Using Features(s) {4, 8, 9, 17, 20} while considering 16, the accuracy is 86.99%
+Using Features(s) {4, 8, 9, 17, 20} while considering 18, the accuracy is 85.74%
+Using Features(s) {4, 8, 9, 17, 20} while considering 19, the accuracy is 85.54%
+
+numLevelsDecreasing = 4
+For level 6, the index chosen is 14 with an accuracy of 87.09%
+The current feature list is: {4, 8, 9, 14, 17, 20}
+
+
+prevBestAccuracy = 87.09
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 1, the accuracy is 83.44%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 2, the accuracy is 84.84%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 3, the accuracy is 84.04%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 5, the accuracy is 84.24%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 6, the accuracy is 83.34%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 7, the accuracy is 83.14%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 10, the accuracy is 83.89%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 11, the accuracy is 83.69%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 12, the accuracy is 82.99%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 13, the accuracy is 84.14%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 15, the accuracy is 83.04%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 16, the accuracy is 83.54%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 18, the accuracy is 83.24%
+Using Features(s) {4, 8, 9, 14, 17, 20} while considering 19, the accuracy is 84.54%
+
+numLevelsDecreasing = 5
+For level 7, the index chosen is 2 with an accuracy of 84.84%
+The current feature list is: {2, 4, 8, 9, 14, 17, 20}
+
+
+prevBestAccuracy = 84.84
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 1, the accuracy is 83.09%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 3, the accuracy is 83.24%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 5, the accuracy is 82.69%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 6, the accuracy is 81.49%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 7, the accuracy is 81.29%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 10, the accuracy is 81.09%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 11, the accuracy is 81.29%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 12, the accuracy is 81.79%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 13, the accuracy is 83.19%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 15, the accuracy is 82.59%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 16, the accuracy is 83.09%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 18, the accuracy is 81.29%
+Using Features(s) {2, 4, 8, 9, 14, 17, 20} while considering 19, the accuracy is 82.34%
+
+numLevelsDecreasing = 6
+For level 8, the index chosen is 3 with an accuracy of 83.24%
+The current feature list is: {2, 3, 4, 8, 9, 14, 17, 20}
+
+
+prevBestAccuracy = 83.24
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 1, the accuracy is 80.44%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 5, the accuracy is 81.24%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 6, the accuracy is 80.89%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 7, the accuracy is 80.64%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 10, the accuracy is 79.19%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 11, the accuracy is 79.49%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 12, the accuracy is 79.69%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 13, the accuracy is 80.89%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 15, the accuracy is 80.59%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 16, the accuracy is 81.59%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 18, the accuracy is 81.09%
+Using Features(s) {2, 3, 4, 8, 9, 14, 17, 20} while considering 19, the accuracy is 80.24%
+
+numLevelsDecreasing = 7
+For level 9, the index chosen is 16 with an accuracy of 81.59%
+The current feature list is: {2, 3, 4, 8, 9, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 81.59
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 1, the accuracy is 78.64%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 5, the accuracy is 78.79%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 6, the accuracy is 79.94%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 7, the accuracy is 79.34%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 10, the accuracy is 78.59%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 11, the accuracy is 79.54%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 12, the accuracy is 78.99%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 13, the accuracy is 80.79%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 15, the accuracy is 78.39%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 18, the accuracy is 78.84%
+Using Features(s) {2, 3, 4, 8, 9, 14, 16, 17, 20} while considering 19, the accuracy is 79.14%
+
+numLevelsDecreasing = 8
+For level 10, the index chosen is 13 with an accuracy of 80.79%
+The current feature list is: {2, 3, 4, 8, 9, 13, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 80.79
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 1, the accuracy is 78.09%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 5, the accuracy is 78.54%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 6, the accuracy is 78.39%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 7, the accuracy is 78.49%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 10, the accuracy is 77.59%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 11, the accuracy is 79.44%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 12, the accuracy is 79.84%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 15, the accuracy is 78.14%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 18, the accuracy is 77.94%
+Using Features(s) {2, 3, 4, 8, 9, 13, 14, 16, 17, 20} while considering 19, the accuracy is 77.89%
+
+numLevelsDecreasing = 9
+For level 11, the index chosen is 12 with an accuracy of 79.84%
+The current feature list is: {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 79.84
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 1, the accuracy is 77.14%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 5, the accuracy is 77.14%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 6, the accuracy is 77.44%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 7, the accuracy is 76.99%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 10, the accuracy is 76.94%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 11, the accuracy is 78.54%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 15, the accuracy is 75.84%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 18, the accuracy is 76.69%
+Using Features(s) {2, 3, 4, 8, 9, 12, 13, 14, 16, 17, 20} while considering 19, the accuracy is 76.19%
+
+numLevelsDecreasing = 10
+For level 12, the index chosen is 11 with an accuracy of 78.54%
+The current feature list is: {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 78.54
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 1, the accuracy is 77.89%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 5, the accuracy is 76.79%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 6, the accuracy is 77.49%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 7, the accuracy is 77.14%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 10, the accuracy is 77.29%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 15, the accuracy is 76.54%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 18, the accuracy is 75.84%
+Using Features(s) {2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 19, the accuracy is 75.59%
+
+numLevelsDecreasing = 11
+For level 13, the index chosen is 1 with an accuracy of 77.89%
+The current feature list is: {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 77.89
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 5, the accuracy is 76.04%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 6, the accuracy is 77.14%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 7, the accuracy is 76.24%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 10, the accuracy is 75.49%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 15, the accuracy is 76.44%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 18, the accuracy is 75.24%
+Using Features(s) {1, 2, 3, 4, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 19, the accuracy is 75.34%
+
+numLevelsDecreasing = 12
+For level 14, the index chosen is 6 with an accuracy of 77.14%
+The current feature list is: {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20}
+
+
+prevBestAccuracy = 77.14
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 5, the accuracy is 73.99%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 7, the accuracy is 75.99%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 10, the accuracy is 75.24%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 15, the accuracy is 76.34%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 18, the accuracy is 75.74%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 16, 17, 20} while considering 19, the accuracy is 74.89%
+
+numLevelsDecreasing = 13
+For level 15, the index chosen is 15 with an accuracy of 76.34%
+The current feature list is: {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20}
+
+
+prevBestAccuracy = 76.34
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20} while considering 5, the accuracy is 74.64%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20} while considering 7, the accuracy is 75.44%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20} while considering 10, the accuracy is 74.19%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20} while considering 18, the accuracy is 76.09%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 20} while considering 19, the accuracy is 74.49%
+
+numLevelsDecreasing = 14
+For level 16, the index chosen is 18 with an accuracy of 76.09%
+The current feature list is: {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20}
+
+
+prevBestAccuracy = 76.09
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 5, the accuracy is 75.49%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 7, the accuracy is 74.14%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 10, the accuracy is 74.39%
+Using Features(s) {1, 2, 3, 4, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 19, the accuracy is 73.79%
+
+numLevelsDecreasing = 15
+For level 17, the index chosen is 5 with an accuracy of 75.49%
+The current feature list is: {1, 2, 3, 4, 5, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20}
+
+
+prevBestAccuracy = 75.49
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 7, the accuracy is 73.39%
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 10, the accuracy is 74.19%
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 19, the accuracy is 72.79%
+
+numLevelsDecreasing = 16
+For level 18, the index chosen is 10 with an accuracy of 74.19%
+The current feature list is: {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20}
+
+
+prevBestAccuracy = 74.19
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 7, the accuracy is 72.99%
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20} while considering 19, the accuracy is 73.09%
+
+numLevelsDecreasing = 17
+For level 19, the index chosen is 19 with an accuracy of 73.09%
+The current feature list is: {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+
+
+prevBestAccuracy = 73.09
+Using Features(s) {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20} while considering 7, the accuracy is 72.14%
+
+numLevelsDecreasing = 18
+For level 20, the index chosen is 7 with an accuracy of 72.14%
+The current feature list is: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+
+The highest accuracy features are: {20, 4} with an accuracy of: 96.85%
+Time: 5845 milliseconds.
