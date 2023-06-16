@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include <typeinfo>
 using namespace std;
+using namespace chrono;
 
 double highestAccuracy = 0;
 vector<int> highestAccuracyFeatures;
@@ -57,12 +58,11 @@ void printFeatures(vector<int> features){
 int nearestNeighbor(vector<vector<double>> &data, int rowNum, vector<int> curSet){
     //cout << "Data Size: " << data.size() << endl;
     //cout << "features: " << curSet.size() << endl;
-    double closestDistance = __DBL_MAX__;
+    double closestDistance = DBL_MAX;
     int indexOfClosest = -1;
     double sum = 0;
     double curDist = 0;
     //int len = data[0].size(); 
-
     for(int i = 0; i < data.size(); i++){
         double sum = 0;
         if(i == rowNum) continue;
@@ -172,6 +172,7 @@ void backwardElimination(vector<vector<double>> &data){
     }
 
     for(int i = 1; i < data[0].size(); i++){   
+        // cout << "i: " << i << endl;
         indexOfFeaturesToBeKept.clear();
         prevBestAccuracy = curBestAccuracy;     //save this accuracy for next level
         cout << "\nprevBestAccuracy = " << prevBestAccuracy << "\n";
@@ -179,6 +180,7 @@ void backwardElimination(vector<vector<double>> &data){
         double curFeatureIndexLoweringAccuracy;
         
         for(int j = 1; j < data[0].size(); j++){    //represents a level
+            // cout << "j " << j << endl;
             //go through the features columns and choose the subset from that is in indexOfFeaturesPicked that gives you the best accuracy.
             if(!isDupe(indexOfAllFeaturesPicked, j)) continue;
 
@@ -313,6 +315,7 @@ int main(int argc, char* argv[]){
         cin >> algo;
     }
 
+    auto start = high_resolution_clock::now();
     switch(algo){
         case 1:
             forwardSelection(data);
@@ -323,10 +326,12 @@ int main(int argc, char* argv[]){
         default:
             break;
     }
+    auto stop = high_resolution_clock::now();
 
     cout << "The highest accuracy features are: ";
     printFeatures(highestAccuracyFeatures);
     cout << " with an accuracy of: " << highestAccuracy << "%" << endl;
+    cout << "Time: " << duration_cast<milliseconds>(stop - start).count() << " milliseconds. " << endl;
     return 0;
 
     //vector<int> featSubset;
